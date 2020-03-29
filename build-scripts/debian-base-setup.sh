@@ -15,18 +15,18 @@ sudo apt-get update
 sudo apt-get -y install virtualbox-6.1
 
 # Install packer (latest from github)
-mkdir tmp; cd tmp
+mkdir ${HOME}/tmp; cd ${HOME}/tmp
 wget https://releases.hashicorp.com/packer/1.5.5/packer_1.5.5_linux_amd64.zip
 unzip packer_1.5.5_linux_amd64.zip
 sudo mv packer /usr/local/bin
 sudo chmod 755 /usr/local/bin/packer
+cd ${HOME}
 
-# Potential fix...
-
-sudo apt-get install -y build-essential
-sudo apt-get install -y linux-headers-$(uname -r)
-sudo /usr/lib/virtualbox/vboxdrv.sh setup
+# Potential fix for GCP issues...commenting out for now
+#sudo apt-get install -y build-essential
+#sudo apt-get install -y linux-headers-$(uname -r)
+#sudo /usr/lib/virtualbox/vboxdrv.sh setup
 
 # Checkout source
-cd $HOME
+cd ${HOME}
 git clone https://github.com/infosecwriter/CSI_Linux_Build.git
