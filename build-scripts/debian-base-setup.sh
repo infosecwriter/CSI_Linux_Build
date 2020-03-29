@@ -21,6 +21,12 @@ unzip packer_1.5.5_linux_amd64.zip
 sudo mv packer /usr/local/bin
 sudo chmod 755 /usr/local/bin/packer
 
+# Potential fix...
+
+sudo apt-get install -y build-essential
+sudo apt-get install -y linux-headers-$(uname -r)
+sudo /usr/lib/virtualbox/vboxdrv.sh setup
+
 # Checkout source
 cd $HOME
 git clone https://github.com/infosecwriter/CSI_Linux_Build.git

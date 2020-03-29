@@ -2,6 +2,8 @@
 
 # Build a VM that supports nested virtualization (and thus virtualbox)  based on https://cloud.google.com/compute/docs/instances/enable-nested-virtualization-vm-instances
 
+# WARNING: Not working right now...maybe test later
+
 gcloud compute disks create nested-vm-disk --image-project debian-cloud --image-family debian-9 --zone us-central1-b
 
 gcloud compute images create nested-vm \
