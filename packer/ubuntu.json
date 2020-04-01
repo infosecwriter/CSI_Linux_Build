@@ -174,13 +174,10 @@
       ],
       "execute_command": "echo '{{ user `ssh_password` }}' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
       "scripts": [
-        "script/desktop.sh",
         "script/update.sh",
         "script/vagrant.sh",
         "script/sshd.sh",
-        "script/vmware.sh",
         "script/virtualbox.sh",
-        "script/parallels.sh",
         "script/motd.sh",
         "{{user `custom_script`}}",
         "script/minimize.sh",
