@@ -9,5 +9,5 @@
   "iso_name": "ubuntu-18.04-mini-amd64.iso",
   "iso_url": "http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso",
   "memory": "1024",
-  "preseed": "xubuntu-desktop.cfg"
+  "preseed": "xubuntu-desktop-proxy.cfg"
 }
