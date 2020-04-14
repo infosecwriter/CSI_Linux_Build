@@ -180,12 +180,33 @@
         "script/virtualbox.sh",
         "script/motd.sh",
         "{{user `custom_script`}}",
-        "script/minimize.sh",
-        "script/cleanup.sh"
+        "script/minimize.sh"
       ],
       "type": "shell",
       "expect_disconnect": "true"
+    },{
+      "type": "shell",
+      "execute_command": "echo '{{ user `ssh_password` }}' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "script": "../scripts/ansible.sh"
+    },
+    {
+      "type": "shell",
+      "execute_command": "echo '{{ user `ssh_password` }}' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "script": "../scripts/setup.sh"
+    },
+    {
+      "type": "ansible-local",
+      "playbook_file": "../ansible/main.yml"
+    },{
+      "type": "shell",
+      "execute_command": "echo '{{ user `ssh_password` }}' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+      "scripts": [
+        "../scripts/cleanup.sh",
+        "script/cleanup.sh"
+      ]
     }
+	
+
   ],
   "variables": {
     "boot_command_prefix": "<esc><wait>",
