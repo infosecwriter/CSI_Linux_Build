@@ -18,7 +18,13 @@ cd /tmp/; wget https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux
 
 ```sh
 sudo apt update
-sudo apt install adb bleachbit catfish cherrytree privoxy clamav clamav-freshclam dcfldd dc3dd ffmpeg foremost scalpel freeplane gimp gnupg gpa guymager transmission guymager hashcat hydra hydra-gtk recordmydesktop gtk-recordmydesktop httrack keepassxc libreoffice magicrescue medusa nmap onionshare ophcrack outguess stegsnow steghide stegosuite recoverdm recoverjpeg tor torsocks proxychains privoxy rkhunter radare2 testdisk recon-ng i2p gcc python-qt4 forensics-all slack pdfcrack gedit curl libxss1 libappindicator1 libindicator7 lynx
+sudo apt install adb bleachbit catfish cherrytree privoxy clamav clamav-freshclam dcfldd \
+dc3dd ffmpeg foremost scalpel freeplane gimp gnupg gpa guymager transmission guymager \
+hashcat hydra hydra-gtk recordmydesktop gtk-recordmydesktop httrack keepassxc \
+libreoffice magicrescue medusa nmap onionshare ophcrack outguess stegsnow steghide \
+stegosuite recoverdm recoverjpeg tor torsocks proxychains privoxy rkhunter radare2 \
+testdisk recon-ng i2p gcc python-qt4 forensics-all slack pdfcrack gedit curl libxss1 \
+libappindicator1 libindicator7 lynx
 ```
 
 ## Chrome Installation
