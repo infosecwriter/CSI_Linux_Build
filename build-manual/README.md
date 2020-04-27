@@ -10,22 +10,30 @@ This is about a 3rd of what gets installed/done.
 
 ## Corretto OpenJDK Distribution
 
+```sh
 cd /tmp/; wget https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.deb && sudo dpkg -i amazon-corretto-8-x64-linux-jdk.deb
+```
 
 ## Build in Linux Packages To Include
 
+```sh
 sudo apt update
 sudo apt install adb bleachbit catfish cherrytree privoxy clamav clamav-freshclam dcfldd dc3dd ffmpeg foremost scalpel freeplane gimp gnupg gpa guymager transmission guymager hashcat hydra hydra-gtk recordmydesktop gtk-recordmydesktop httrack keepassxc libreoffice magicrescue medusa nmap onionshare ophcrack outguess stegsnow steghide stegosuite recoverdm recoverjpeg tor torsocks proxychains privoxy rkhunter radare2 testdisk recon-ng i2p gcc python-qt4 forensics-all slack pdfcrack gedit curl libxss1 libappindicator1 libindicator7 lynx
+```
 
 ## Chrome Installation
 
+```sh
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome*.deb
+```
 
 ## Armory Installation
 
+```sh
 wget https://github.com/goatpig/BitcoinArmory/releases/download/v0.96/armory_0.96-gcc5.4_amd64.deb
 dpkg -i armory_0.96-gcc5.4_amd64.deb
+```
 
 ## CSI Tools Installation
 
