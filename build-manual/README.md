@@ -12,7 +12,7 @@ This is about a 3rd of what gets installed/done.
 
 ```sh
 cd /tmp/
-wget https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.deb && \\
+wget https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.deb && \
 sudo dpkg -i amazon-corretto-8-x64-linux-jdk.deb
 ```
 
